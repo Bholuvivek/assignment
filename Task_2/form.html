@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f1f1f1;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+		form {
+			background-color: #f9fbf5;
+			max-width: 550px;
+			margin: 0 auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #1ee013;
+		}
+		input[type=text],input[type=email], input[type=tel],input[type=date],input[type=password]  {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0,0,0,0.1);
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Sign Up Form</h1>
+	<form action="submit.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required>
+		
+        <label>Gender</label>
+        <input type="radio" name="gender" value="m" required>Male
+        <input type="radio" name="gender" value="f" required>Female
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required>
+		
+        <label for="phone">Mobile Number:</label>
+		<input type="tel" id="phone" name="phone" placeholder="Enter your Mobile number" required>
+
+        <label for="date of birth">DOB:</label>
+		<input type="date" id="dob" name="dob" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="Enter your password" required>
+		
+		<input type="submit" value="Sign Up">
+	</form>
+	<script>
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Video Template</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+		h1{
+			text-align: center;
+			background-color: rgb(149, 11, 11);
+
+		}
+		.container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 20px;
+			padding: 20px;
+		}
+		.video-container {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 25px;
+			height: 0;
+		}
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.listening-video {
+			position: relative;
+			padding-bottom: 56.25%;
+			padding-top: 5px;
+			height: 0;
+		}
+		.listening-video video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.emotion-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			
+		}
+		footer {
+			background-color: #ccc;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Live Video</h1>
+	</header>
+	<main>
+		<div class="containe">
+			<div class="live-video">
+				<div class="video-container">
+					<!-- embed my live video player here -->
+					<h2>This is For Live  Embed </h2>
+					<embed width="350" height="250px"src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</div>
+			</div>
+			<div class="listening-video">
+				<h1>This is for Listening</h1>
+				<iframe width="350" height="250px"src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</iframe>
+			</div>
+			<div class="emotion-container">
+				
+				
+			</div>
+			<div class="grid-section">
+				<h1>This is for Grid</h1>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 By @MR. Vivek Singh Bholu</p>
+	</footer>
+</body>
+</html>
